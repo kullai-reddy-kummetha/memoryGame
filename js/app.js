@@ -127,7 +127,7 @@ function endGame(){
     // show prompt
     let stars = $(".fa-star").length;
     vex.dialog.confirm({
-        message: `Congrats! You just won the game in ${timeCount} seconds with ${stars}/3 rating. Do you want to play again?`,
+        message: `Congratulations! You won the game in ${timeCount} seconds with ${moves} moves and ${stars}/3 rating. Do you want to play again?`,
         callback: function(value){
             if (value){
                 resetGame();
